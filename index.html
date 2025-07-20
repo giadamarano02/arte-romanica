@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+<link href="style.css" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<title>Arte Romanica - Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Alatsi&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/></head>
+<body>
+<header>
+<h1>Arte Romanica</h1>
+
+<div class="search-container">
+<input class="search-input" id="searchInput" placeholder="Cerca opera..." type="text"/>
+<button aria-label="Cerca" class="search-button" id="searchButton">
+<i class="fas fa-search"></i>
+</button>
+</div>
+<p id="noResultsMessage" style="display: none; text-align: center; font-weight: bold; color: red; margin-top: 20px;">
+        Nessun risultato trovato.
+    </p>
+</header>
+<hr/>
+<nav class="main-nav">
+<h2>HOME</h2>
+<ul>
+<li><a href="pittura.html">Pittura</a></li>
+<li><a href="scultura.html">Scultura</a></li>
+<li><a href="architettura.html">Architettura</a></li>
+<li><a href="web.html">Web Project Plan</a></li>
+</ul>
+</nav>
+<hr/>
+<main>
+<section class="introduzione">
+<p>L’arte romanica è una delle manifestazioni artistiche europee che si sviluppa tra il mille e la fine del XII secolo. La matrice di questo movimento artistico è romana ma si differenzia a seconda delle regioni geografiche, delle diverse economie e delle diversità culturali di ogni singola città. Nasce in Francia per poi estendersi in tutta Europa.</p>
+<p>Dopo l’anno mille in Europa, si assiste ad un ripopolamento delle città e alla conseguente ripresa economica, evidenziata dall’aumento di scambi commerciali. Questo porta un fermento innovativo anche nell’arte, soprattutto per quanto riguarda le strutture preesistenti e la costruzione di nuovi centri urbani. Le nuove città si modificarono anche per quanto riguarda le funzioni difensive, si pensi ai modelli di città cinte da mura e fortificazioni isolate. Importanti gli edifici dedicati al culto della religione cattolica, la maggior parte di essi mostrano una pianta basilicale a croce latina con tre o cinque navate.</p>
+<p>Questo movimento artistico ebbe la capacità di unire la fede religiosa all'arte, esprimendo la potenza di Dio, la vita dei santi e i temi religiosi. Crea un linguaggio visivo comprensibile a tutti, anche agli analfabeti. Ebbe il ruolo di ponte tra l'arte antica e quella gotica, preparando il terreno per il successivo sviluppo del Rinascimento.</p>
+</section>
+<section class="gallery">
+<h2>Galleria di Esempi Romanici</h2>
+<div class="gallery-item">
+<a href="https://g.co/kgs/mFBrVF8" target="_blank"> <img alt="duomo di Modena" src="immagini/duomo di Modena.jpeg"/> </a>
+<div class="gallery-caption">Duomo di Modena, Italia</div>
+</div>
+<div class="gallery-item">
+<a href="https://g.co/kgs/BAAzCk3" target="_blank"> <img alt="Cattedrale di Santiago de Compostela" src="immagini/cattedrale santiago de compostela.jpg"/> </a>
+<div class="gallery-caption">Cattedrale di Santiago de Compostela, Spagna</div>
+</div>
+<div class="gallery-item">
+<a href="https://g.co/kgs/c8CqUvH" target="_blank"> <img alt="Abbazia di Cluny" src="immagini/capitello di cluny.jpg"/> </a>
+<div class="gallery-caption">Abbazia di Cluny, Francia</div>
+</div>
+<div class="gallery-item">
+<a href="https://g.co/kgs/L43iAUW" target="_blank"> <img alt="Pulpito di Guglielmo, Pisa.jpeg" src="immagini/Pulpito di Guglielmo, Pisa.jpeg"/> </a>
+<div class="gallery-caption">Pulpito di Guglielmo da Modena</div>
+</div>
+<div class="gallery-item">
+<a href="https://g.co/kgs/BfturaK" target="_blank"> <img alt="mosaico" src="immagini/mosaico.jpeg"/></a>
+<div class="gallery-caption"> Mosaico cappella Medaglia Miracolosa, Parigi </div>
+</div>
+<div class="gallery-item">
+<a href="https://g.co/kgs/Wdz1qC2" target="_blank"> <img alt="basilica " src="immagini/basilica di S_MariadellAssunta.jpeg"/> </a>
+<div class="gallery-caption">Basilica S. Maria dell'Assunta, Venezia</div>
+</div>
+</section>
+<h2 style="text-align:center; margin-top: 40px;">Mappa dei Monumenti Romanici in Italia</h2>
+<div class="mappa-container">
+<img alt="Mappa dell'Italia" src="immagini/italia.png"/>
+<a class="circle-link lombardia" href="monumenti.html#regionelombardia">5</a>
+<a class="circle-link emilia" href="monumenti.html#regioneemilia">4</a>
+<a class="circle-link toscana" href="monumenti.html#regionetoscana">7</a>
+<a class="circle-link puglia" href="monumenti.html#regionepuglia">4</a>
+<a class="circle-link sicilia" href="monumenti.html#regionesicilia">6</a>
+</div>
+<p style="text-align: center; margin-top: 10px; color: white;">
+            Clicca su una regione per esplorare i monumenti romanici più importanti.
+        </p>
+<blockquote style="margin-top: 40px;">
+            "L'arte romanica è la prima arte veramente europea, diffusa da un capo all'altro del continente." - Henry Focillon
+        </blockquote>
+</main>
+<footer>
+<div class="footer-content">
+<p>Esame Informatica Umanistica, Università di Bologna Alma Mater Studiorum.</p>
+<p>Giada Francesca Marano</p>
+<a download="" href="web project plan.pdf">Scarica Web Project Plan</a>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    const galleryItems = document.querySelectorAll('.gallery-item, .monument-item');
+    const noResults = document.getElementById('noResultsMessage');
+
+    function performSearch() {
+        const searchTerm = searchInput.value.toLowerCase();
+        let found = false;
+
+        galleryItems.forEach(item => {
+            const text = item.innerText.toLowerCase();
+            if (text.includes(searchTerm)) {
+                item.style.display = '';
+                found = true;
+            } else {
+                item.style.display = 'none';
+            }
+        });
+
+        if (noResults) {
+            noResults.style.display = (searchTerm && !found) ? 'block' : 'none';
+        }
+    }
+
+    searchInput.addEventListener('keyup', performSearch);
+});
+</script>
+
+
+</body>
+</html>

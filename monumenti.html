@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<title>Monumenti Romanici per Regione</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
+      
+      
+
+    
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        h1, h2 {
+            color: #444;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: #fff;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/></head>
+<body>
+<header>
+<h1>Monumenti Romanici per Regione</h1>
+
+<div class="search-container">
+<input class="search-input" id="searchInput" placeholder="Cerca opera..." type="text"/>
+<button aria-label="Cerca" class="search-button" id="searchButton">
+<i class="fas fa-search"></i>
+</button>
+</div>
+<p id="noResultsMessage" style="display: none; text-align: center; font-weight: bold; color: red; margin-top: 20px;">
+        Nessun risultato trovato.
+    </p>
+</header>
+<main>
+<section id="regionetoscana">
+<h2>Toscana</h2>
+<div class="region-gallery">
+<figure class="monument-item">
+<img alt="San Miniato al Monte (Firenze)" src="immagini/san_miniato_al_monte.jpg"/>
+<figcaption>San Miniato al Monte (Firenze)</figcaption>
+</figure>
+<figure class="monument-item">
+<img alt="Duomo di Pisa" src="immagini/duomo_pisa.jpg"/>
+<figcaption>Duomo di Pisa</figcaption>
+</figure>
+<figure class="monument-item">
+<img alt="Abbazia di Sant’Antimo" src="immagini//abbazia_sant_antimo.jpg"/>
+<figcaption>Abbazia di Sant’Antimo</figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini//Parco archeologico di Pieve.jpg"/>
+<figcaption>Parco archeologico di Pieve</figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini/Anfiteatroromano.jpeg"/>
+<figcaption>Anfiteatro romano </figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini/Area archeologica.jpg"/>
+<figcaption>Area archeologica </figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini/il romanico pisano.jpg"/>
+<figcaption>il romanico pisano</figcaption>
+</figure>
+</div>
+</section>
+<section id="regionelombardia">
+<h2>Lombardia</h2>
+<div class="region-gallery">
+<figure class="monument-item">
+<img alt="Basilica di Sant'Ambrogio (Milano)" src="immagini/basilica_sant_ambrogio.jpg"/>
+<figcaption>Basilica di Sant'Ambrogio (Milano)</figcaption>
+</figure>
+<figure class="monument-item">
+<img alt="San Michele Maggiore (Pavia)" src="immagini/san_michele_maggiore.jpg"/>
+<figcaption>San Michele Maggiore (Pavia)</figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini/Basilica di San Pietro.jpeg"/>
+<figcaption>Basilica di San Pietro (Pavia)</figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini/complesso_monumentale.jpg"/>
+<figcaption> Complesso monumentale (Galliano)</figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini/Santa Maria Maggiore (Bergamo).jpg"/>
+<figcaption>Santa Maria Maggiore (Bergamo)</figcaption>
+</figure>
+</div>
+</section>
+<section id="regioneemilia">
+<h2>Emilia-Romagna</h2>
+<div class="region-gallery">
+<figure class="monument-item">
+<img src="immagini/duomo di Modena.jpeg"/>
+<figcaption>Duomo di Modena</figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini/basilica_san_zeno.jpg"/>
+<figcaption>Basilica di San Zeno</figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini/Cattedrale di Parma.jpg"/>
+<figcaption>Cattedrale di Parma</figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini/Basilica di San Domenico a Bologna.jpeg"/>
+<figcaption>Basilica di San Domenico a Bologna</figcaption>
+</figure>
+</div>
+</section>
+<section id="regionepuglia">
+<h2>Puglia</h2>
+<div class="region-gallery">
+<figure class="monument-item">
+<img src="immagini/cattedrale_trani.jpg"/>
+<figcaption>Cattedrale di Trani</figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini/san_nicola_bari.jpg"/>
+<figcaption>San Nicola di Bari</figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini/Duomo di Lecce.jpg"/>
+<figcaption>Duomo di Lecce </figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini/Faro Santa Maria di Leuca.jpg"/>
+<figcaption>Faro Santa Maria di Leuca</figcaption>
+</figure>
+</div>
+</section>
+<section id="regionesicilia">
+<h2>Sicilia</h2>
+<div class="region-gallery">
+<figure class="monument-item">
+<img src="immagini/cattedrale_cefalu.jpg"/>
+<figcaption>Cattedrale di Cefalù</figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini/duomo_monreale.jpg"/>
+<figcaption>Duomo di Monreale</figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini/Duomo di Palermo.jpg"/>
+<figcaption>Duomo di Palermo  </figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini/Cappella Palatina.jpg"/>
+<figcaption>Cappella Palatina </figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini/Palazzo dei Normanni.jpg"/>
+<figcaption>Palazzo dei Normanni </figcaption>
+</figure>
+<figure class="monument-item">
+<img src="immagini/Chiesa San Giovanni degli Eremiti.jpg"/>
+<figcaption>Chiesa San Giovanni degli Eremiti</figcaption>
+</figure>
+</div>
+</section>
+</main>
+<footer>
+<div class="footer-content">
+<p><a href="mappa.html">Torna alla Mappa</a> | <a href="index.html">Home</a></p>
+</div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    const galleryItems = document.querySelectorAll('.gallery-item, .monument-item');
+    const noResults = document.getElementById('noResultsMessage');
+
+    function performSearch() {
+        const searchTerm = searchInput.value.toLowerCase();
+        let found = false;
+
+        galleryItems.forEach(item => {
+            const text = item.innerText.toLowerCase();
+            if (text.includes(searchTerm)) {
+                item.style.display = '';
+                found = true;
+            } else {
+                item.style.display = 'none';
+            }
+        });
+
+        if (noResults) {
+            noResults.style.display = (searchTerm && !found) ? 'block' : 'none';
+        }
+    }
+
+    searchInput.addEventListener('keyup', performSearch);
+});
+</script>
+
+</body>
+</html>
